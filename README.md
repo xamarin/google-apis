@@ -31,7 +31,7 @@ Action showTasks = () =>
 		Console.WriteLine (task.Title);
 };
 
-// We don't want to have to login every time, so we'll use the Xamarin.Auth AccoutnStore
+// We don't want to have to login every time, so we'll use the Xamarin.Auth AccountStore
 AccountStore store = AccountStore.Create (this);
 Account savedAccount = store.FindAccountsForService ("google").FirstOrDefault();
 if (savedAccount != null)
