@@ -1,0 +1,5 @@
+*.ide
+bin
+obj
+*.user
+*.suo

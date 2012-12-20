@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Android", "Android", "{1376BEB1-8358-4B14-ABD2-D04C670F49A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Auth.Android", "Externals\Xamarin.Auth\src\Xamarin.Auth.Android\Xamarin.Auth.Android.csproj", "{FCF02C8C-6DD3-4C59-A8A2-58BC01A4BB21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Apis.Android", "Android\Google.Apis.Android\Google.Apis.Android.csproj", "{436F36E5-B573-4A92-BFAD-45BCCD255AC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Apis.Android.Sample", "..\samples\GoogleApis.Android.Sample\Google.Apis.Android.Sample.csproj", "{6FC28A13-FD2C-4B84-83F6-41E9D727623C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Apis.Android.Generated", "Android\Google.Apis.Android.Generated\Google.Apis.Android.Generated.csproj", "{85F34F2E-F32F-4BC6-9A15-424BC856DE14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{7C0E87B4-9242-4179-A290-559F95D15637}"
+	ProjectSection(SolutionItems) = preProject
+		..\LICENSE.md = ..\LICENSE.md
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCF02C8C-6DD3-4C59-A8A2-58BC01A4BB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF02C8C-6DD3-4C59-A8A2-58BC01A4BB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF02C8C-6DD3-4C59-A8A2-58BC01A4BB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF02C8C-6DD3-4C59-A8A2-58BC01A4BB21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{436F36E5-B573-4A92-BFAD-45BCCD255AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436F36E5-B573-4A92-BFAD-45BCCD255AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436F36E5-B573-4A92-BFAD-45BCCD255AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436F36E5-B573-4A92-BFAD-45BCCD255AC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC28A13-FD2C-4B84-83F6-41E9D727623C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FC28A13-FD2C-4B84-83F6-41E9D727623C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FC28A13-FD2C-4B84-83F6-41E9D727623C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6FC28A13-FD2C-4B84-83F6-41E9D727623C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FC28A13-FD2C-4B84-83F6-41E9D727623C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FC28A13-FD2C-4B84-83F6-41E9D727623C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{85F34F2E-F32F-4BC6-9A15-424BC856DE14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F34F2E-F32F-4BC6-9A15-424BC856DE14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F34F2E-F32F-4BC6-9A15-424BC856DE14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F34F2E-F32F-4BC6-9A15-424BC856DE14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCF02C8C-6DD3-4C59-A8A2-58BC01A4BB21} = {1376BEB1-8358-4B14-ABD2-D04C670F49A4}
+		{436F36E5-B573-4A92-BFAD-45BCCD255AC8} = {1376BEB1-8358-4B14-ABD2-D04C670F49A4}
+		{6FC28A13-FD2C-4B84-83F6-41E9D727623C} = {1376BEB1-8358-4B14-ABD2-D04C670F49A4}
+		{85F34F2E-F32F-4BC6-9A15-424BC856DE14} = {1376BEB1-8358-4B14-ABD2-D04C670F49A4}
+	EndGlobalSection
+EndGlobal

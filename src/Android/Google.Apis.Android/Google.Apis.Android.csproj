@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{436F36E5-B573-4A92-BFAD-45BCCD255AC8}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Google.Apis</RootNamespace>
+    <AssemblyName>Google.Apis.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\Externals\google-api-dotnet-client\ThirdParty\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json.Net35">
+      <HintPath>..\..\Externals\google-api-dotnet-client\ThirdParty\Newtonsoft.Json.Net35.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Authentication\DelegateAuthenticator.cs">
+      <Link>Apis\Authentication\DelegateAuthenticator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Authentication\HttpRequestFactory.cs">
+      <Link>Apis\Authentication\HttpRequestFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Authentication\IAuthenticator.cs">
+      <Link>Apis\Authentication\IAuthenticator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Authentication\ICreateHttpRequest.cs">
+      <Link>Apis\Authentication\ICreateHttpRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Authentication\NullAuthenticator.cs">
+      <Link>Apis\Authentication\NullAuthenticator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\CachedWebDiscoveryDevice.cs">
+      <Link>Apis\Discovery\CachedWebDiscoveryDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\DiscoveryService.cs">
+      <Link>Apis\Discovery\DiscoveryService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\DiscoveryVersion.cs">
+      <Link>Apis\Discovery\DiscoveryVersion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\Features.cs">
+      <Link>Apis\Discovery\Features.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\IDiscoveryDevice.cs">
+      <Link>Apis\Discovery\IDiscoveryDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\IDiscoveryService.cs">
+      <Link>Apis\Discovery\IDiscoveryService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\IMethod.cs">
+      <Link>Apis\Discovery\IMethod.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\IParameter.cs">
+      <Link>Apis\Discovery\IParameter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\IRequestProvider.cs">
+      <Link>Apis\Discovery\IRequestProvider.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\IResourceContainer.cs">
+      <Link>Apis\Discovery\IResourceContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\IService.cs">
+      <Link>Apis\Discovery\IService.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\MediaUpload.cs">
+      <Link>Apis\Discovery\MediaUpload.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\Method.cs">
+      <Link>Apis\Discovery\Method.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\Parameter.cs">
+      <Link>Apis\Discovery\Parameter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\Resource.cs">
+      <Link>Apis\Discovery\Resource.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\Schema\FutureJsonSchema.cs">
+      <Link>Apis\Discovery\Schema\FutureJsonSchema.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\Schema\FutureJsonSchemaResolver.cs">
+      <Link>Apis\Discovery\Schema\FutureJsonSchemaResolver.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\Schema\ISchema.cs">
+      <Link>Apis\Discovery\Schema\ISchema.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\Schema\SchemaImpl.cs">
+      <Link>Apis\Discovery\Schema\SchemaImpl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\Scope.cs">
+      <Link>Apis\Discovery\Scope.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\Service.cs">
+      <Link>Apis\Discovery\Service.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\ServiceFactory.cs">
+      <Link>Apis\Discovery\ServiceFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\ServiceFactoryImpl.cs">
+      <Link>Apis\Discovery\ServiceFactoryImpl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\ServiceObject.cs">
+      <Link>Apis\Discovery\ServiceObject.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\StreamDiscoveryDevice.cs">
+      <Link>Apis\Discovery\StreamDiscoveryDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\StringDiscoveryDevice.cs">
+      <Link>Apis\Discovery\StringDiscoveryDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Discovery\WebDiscoveryDevice.cs">
+      <Link>Apis\Discovery\WebDiscoveryDevice.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\ISerializer.cs">
+      <Link>Apis\ISerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Json\IJsonSerializer.cs">
+      <Link>Apis\Json\IJsonSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Json\JsonDictionary.cs">
+      <Link>Apis\Json\JsonDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Json\JsonReader.cs">
+      <Link>Apis\Json\JsonReader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Json\JsonToken.cs">
+      <Link>Apis\Json\JsonToken.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Json\NewtonsoftJsonSerializer.cs">
+      <Link>Apis\Json\NewtonsoftJsonSerializer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Json\TokenStream.cs">
+      <Link>Apis\Json\TokenStream.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Logging\ILogger.cs">
+      <Link>Apis\Logging\ILogger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Logging\Log4NetLogger.cs">
+      <Link>Apis\Logging\Log4NetLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Logging\NullLogger.cs">
+      <Link>Apis\Logging\NullLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\OAuthBase.cs">
+      <Link>Apis\OAuthBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\OAuthUtil.cs">
+      <Link>Apis\OAuthUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\ETagAction.cs">
+      <Link>Apis\Requests\ETagAction.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\HttpWebRequestBuilder.cs">
+      <Link>Apis\Requests\HttpWebRequestBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\IDirectResponseSchema.cs">
+      <Link>Apis\Requests\IDirectResponseSchema.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\IErrorResponseHandler.cs">
+      <Link>Apis\Requests\IErrorResponseHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\IRequest.cs">
+      <Link>Apis\Requests\IRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\IResponse.cs">
+      <Link>Apis\Requests\IResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\IServiceRequest.cs">
+      <Link>Apis\Requests\IServiceRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\MethodValidator.cs">
+      <Link>Apis\Requests\MethodValidator.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\ParameterCollection.cs">
+      <Link>Apis\Requests\ParameterCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\Request.cs">
+      <Link>Apis\Requests\Request.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\RequestError.cs">
+      <Link>Apis\Requests\RequestError.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\Response.cs">
+      <Link>Apis\Requests\Response.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\ReturnType.cs">
+      <Link>Apis\Requests\ReturnType.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\ServiceRequest.cs">
+      <Link>Apis\Requests\ServiceRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\SingleError.cs">
+      <Link>Apis\Requests\SingleError.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Requests\UriFactory.cs">
+      <Link>Apis\Requests\UriFactory.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Testing\VisibleForTestOnly.cs">
+      <Link>Apis\Testing\VisibleForTestOnly.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Upload\IUploadProgress.cs">
+      <Link>Apis\Upload\IUploadProgress.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Upload\ResumableUpload.cs">
+      <Link>Apis\Upload\ResumableUpload.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Utilities.cs">
+      <Link>Apis\Utilities.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Util\EnumStringValueTypeConverter.cs">
+      <Link>Apis\Util\EnumStringValueTypeConverter.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Util\LazyBinding.cs">
+      <Link>Apis\Util\LazyBinding.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Util\LazyResult.cs">
+      <Link>Apis\Util\LazyResult.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Util\ReadOnlyDictionary.cs">
+      <Link>Apis\Util\ReadOnlyDictionary.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Util\Repeatable.cs">
+      <Link>Apis\Util\Repeatable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Util\RequestParameterAttribute.cs">
+      <Link>Apis\Util\RequestParameterAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Util\StandardResponse.cs">
+      <Link>Apis\Util\StandardResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Util\StringValueAttribute.cs">
+      <Link>Apis\Util\StringValueAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\Apis\Util\Utilities.cs">
+      <Link>Apis\Util\Utilities.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\ApplicationContext.cs">
+      <Link>ApplicationContext.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\GoogleApiException.cs">
+      <Link>GoogleApiException.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\ThirdParty\HttpEncoder.cs">
+      <Link>ThirdParty\HttpEncoder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Externals\google-api-dotnet-client\Src\GoogleApis\ThirdParty\HttpUtility.cs">
+      <Link>ThirdParty\HttpUtility.cs</Link>
+    </Compile>
+    <Compile Include="Apis\Authentication\GoogleAuthenticator.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Externals\Xamarin.Auth\src\Xamarin.Auth.Android\Xamarin.Auth.Android.csproj">
+      <Project>{fcf02c8c-6dd3-4c59-a8a2-58bc01a4bb21}</Project>
+      <Name>Xamarin.Auth.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
