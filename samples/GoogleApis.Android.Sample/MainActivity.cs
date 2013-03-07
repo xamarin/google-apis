@@ -30,30 +30,15 @@ namespace Google.Apis.Android.Sample
 			SetProgressBarIndeterminateVisibility (true);
 
 			this.auth = new GoogleAuthenticator (ClientID, new Uri (RedirectUrl), TasksService.Scopes.Tasks.GetStringValue());
+			this.auth.Completed += (sender, args) => {
+				if (args.IsAuthenticated)
+					RunOnUiThread (Setup);
+				else
+					Toast.MakeText (this, "Error logging in", ToastLength.Long).Show();
+			};
 
-			AccountStore store = AccountStore.Create (this);
-			Account savedAccount = store.FindAccountsForService ("google").FirstOrDefault();
-			if (savedAccount != null)
-			{
-				this.auth.Account = savedAccount;
-				Setup();
-			}
-			else
-			{
-				this.auth.Completed += (sender, args) =>
-				{
-					if (args.IsAuthenticated)
-					{
-						store.Save (args.Account, "google");
-						RunOnUiThread (Setup);
-					}
-					else
-						Toast.MakeText (this, "Error logging in", ToastLength.Long).Show();
-				};
-
-				Intent authIntent = this.auth.GetUI (this);
-				StartActivity (authIntent);
-			}
+			Intent authIntent = this.auth.GetUI (this);
+			StartActivity (authIntent);
 		}
 
 		public override bool OnCreateOptionsMenu (IMenu menu)
