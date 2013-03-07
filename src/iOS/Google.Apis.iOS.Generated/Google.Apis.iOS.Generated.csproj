@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{91AD4B7C-2BA1-4994-BCD9-F000EB14DA29}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Google.Apis.iOS.Generated</RootNamespace>
+    <AssemblyName>Google.Apis.iOS.Generated</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Adexchangebuyer.v1.1.cs">
+      <Link>Google.Apis.Adexchangebuyer.v1.1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Adexchangeseller.v1.cs">
+      <Link>Google.Apis.Adexchangeseller.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Adsense.v1.2.cs">
+      <Link>Google.Apis.Adsense.v1.2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Adsensehost.v4.1.cs">
+      <Link>Google.Apis.Adsensehost.v4.1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Analytics.v3.cs">
+      <Link>Google.Apis.Analytics.v3.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Androidpublisher.v1.cs">
+      <Link>Google.Apis.Androidpublisher.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Audit.v1.cs">
+      <Link>Google.Apis.Audit.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Bigquery.v2.cs">
+      <Link>Google.Apis.Bigquery.v2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Blogger.v3.cs">
+      <Link>Google.Apis.Blogger.v3.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Books.v1.cs">
+      <Link>Google.Apis.Books.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Calendar.v3.cs">
+      <Link>Google.Apis.Calendar.v3.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Civicinfo.us_v1.cs">
+      <Link>Google.Apis.Civicinfo.us_v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Compute.v1beta13.cs">
+      <Link>Google.Apis.Compute.v1beta13.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Coordinate.v1.cs">
+      <Link>Google.Apis.Coordinate.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Customsearch.v1.cs">
+      <Link>Google.Apis.Customsearch.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Dfareporting.v1.1.cs">
+      <Link>Google.Apis.Dfareporting.v1.1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Discovery.v1.cs">
+      <Link>Google.Apis.Discovery.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Drive.v2.cs">
+      <Link>Google.Apis.Drive.v2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Freebase.v1.cs">
+      <Link>Google.Apis.Freebase.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Freebase.v1sandbox.cs">
+      <Link>Google.Apis.Freebase.v1sandbox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Fusiontables.v1.cs">
+      <Link>Google.Apis.Fusiontables.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Gan.v1beta1.cs">
+      <Link>Google.Apis.Gan.v1beta1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Groupssettings.v1.cs">
+      <Link>Google.Apis.Groupssettings.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Latitude.v1.cs">
+      <Link>Google.Apis.Latitude.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Licensing.v1.cs">
+      <Link>Google.Apis.Licensing.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Moderator.v1.cs">
+      <Link>Google.Apis.Moderator.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Oauth2.v2.cs">
+      <Link>Google.Apis.Oauth2.v2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Orkut.v2.cs">
+      <Link>Google.Apis.Orkut.v2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Pagespeedonline.v1.cs">
+      <Link>Google.Apis.Pagespeedonline.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Plus.v1.cs">
+      <Link>Google.Apis.Plus.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Plus.v1moments.cs">
+      <Link>Google.Apis.Plus.v1moments.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Prediction.v1.5.cs">
+      <Link>Google.Apis.Prediction.v1.5.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Reseller.v1.cs">
+      <Link>Google.Apis.Reseller.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Reseller.v1sandbox.cs">
+      <Link>Google.Apis.Reseller.v1sandbox.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Shopping.v1.cs">
+      <Link>Google.Apis.Shopping.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.SiteVerification.v1.cs">
+      <Link>Google.Apis.SiteVerification.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Storage.v1beta1.cs">
+      <Link>Google.Apis.Storage.v1beta1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Taskqueue.v1beta2.cs">
+      <Link>Google.Apis.Taskqueue.v1beta2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Tasks.v1.cs">
+      <Link>Google.Apis.Tasks.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Translate.v2.cs">
+      <Link>Google.Apis.Translate.v2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Urlshortener.v1.cs">
+      <Link>Google.Apis.Urlshortener.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Webfonts.v1.cs">
+      <Link>Google.Apis.Webfonts.v1.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Youtube.v3.cs">
+      <Link>Google.Apis.Youtube.v3.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.YoutubeAnalytics.v1.cs">
+      <Link>Google.Apis.YoutubeAnalytics.v1.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Google.Apis.iOS\Google.Apis.iOS.csproj">
+      <Project>{83265c01-b9e7-4964-9c08-5390686d4ef5}</Project>
+      <Name>Google.Apis.iOS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Externals\google-api-dotnet-client\ThirdParty\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+</Project>
