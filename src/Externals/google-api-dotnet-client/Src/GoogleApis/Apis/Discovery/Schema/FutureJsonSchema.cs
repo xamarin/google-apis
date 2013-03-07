@@ -81,7 +81,6 @@ namespace Google.Apis.Discovery.Schema
             Format = schema.Format;
             Hidden = schema.Hidden;
             Id = schema.Id;
-            Identity = schema.Identity;
             Items = schema.Items;
             Maximum = schema.Maximum;
             MaximumItems = schema.MaximumItems;
@@ -89,7 +88,7 @@ namespace Google.Apis.Discovery.Schema
             Minimum = schema.Minimum;
             MinimumItems = schema.MinimumItems;
             MinimumLength = schema.MinimumLength;
-            Options = schema.Options;
+
             Pattern = schema.Pattern;
             
             Properties = schema.Properties;
