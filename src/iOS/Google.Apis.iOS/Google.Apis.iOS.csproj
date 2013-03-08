@@ -302,8 +302,8 @@
     <Reference Include="monotouch" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Xamarin.Auth.iOS\Xamarin.Auth.iOS.csproj">
-      <Project>{fe6c5da9-490e-4124-ab11-9bf03ae8a0d3}</Project>
+    <ProjectReference Include="..\..\Externals\Xamarin.Auth\src\Xamarin.Auth.iOS\Xamarin.Auth.iOS.csproj">
+      <Project>{9309bccc-aa7b-4195-a130-d4572fa9488d}</Project>
       <Name>Xamarin.Auth.iOS</Name>
     </ProjectReference>
   </ItemGroup>

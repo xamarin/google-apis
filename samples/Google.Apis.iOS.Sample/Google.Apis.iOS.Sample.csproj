@@ -77,6 +77,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Externals\Xamarin.Auth\src\Xamarin.Auth.iOS\Xamarin.Auth.iOS.csproj">
+      <Project>{9309bccc-aa7b-4195-a130-d4572fa9488d}</Project>
+      <Name>Xamarin.Auth.iOS</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\src\iOS\Google.Apis.iOS.Generated\Google.Apis.iOS.Generated.csproj">
       <Project>{91ad4b7c-2ba1-4994-bcd9-f000eb14da29}</Project>
       <Name>Google.Apis.iOS.Generated</Name>
@@ -84,10 +88,6 @@
     <ProjectReference Include="..\..\src\iOS\Google.Apis.iOS\Google.Apis.iOS.csproj">
       <Project>{83265c01-b9e7-4964-9c08-5390686d4ef5}</Project>
       <Name>Google.Apis.iOS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\iOS\Xamarin.Auth.iOS\Xamarin.Auth.iOS.csproj">
-      <Project>{fe6c5da9-490e-4124-ab11-9bf03ae8a0d3}</Project>
-      <Name>Xamarin.Auth.iOS</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
