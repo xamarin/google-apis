@@ -33,9 +33,6 @@
     <DocumentationFile>bin\Release\Google.Apis.Android.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net">
-      <HintPath>..\..\Externals\google-api-dotnet-client\ThirdParty\log4net.dll</HintPath>
-    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\Externals\google-api-dotnet-client\ThirdParty\Newtonsoft.Json.dll</HintPath>
