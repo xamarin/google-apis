@@ -16,13 +16,14 @@ namespace Google.Apis.iOS.Sample
 	[Register("AppDelegate")]
 	public partial class AppDelegate : UIApplicationDelegate
 	{
-		public const string ClientID = "546770234068-1qtjfqjoad3pmp1blo2ndvp7cc8lscvb.apps.googleusercontent.com";
+		public const string ClientID = "Your Client ID";
+		public const string RedirectUrl = "Your redirect URL";
 
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
 		{
 			window = new UIWindow (UIScreen.MainScreen.Bounds);
 
-			this.auth = new GoogleAuthenticator (ClientID, new Uri ("http://www.facebook.com/connect/login_success.html"), TasksService.Scopes.Tasks.GetStringValue());
+			this.auth = new GoogleAuthenticator (ClientID, new Uri (RedirectUrl), TasksService.Scopes.Tasks.GetStringValue());
 			this.auth.Completed += (sender, e) => {
 				if (e.IsAuthenticated)
 					BeginInvokeOnMainThread (Setup);
