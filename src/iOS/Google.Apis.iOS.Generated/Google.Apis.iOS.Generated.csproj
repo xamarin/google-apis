@@ -52,6 +52,7 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
+    <DocumentationFile>bin\iPhone\Release\Google.Apis.iOS.Generated.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\..\Android\Google.Apis.Android.Generated\Google.Apis.Adexchangebuyer.v1.1.cs">

@@ -54,6 +54,7 @@
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
     <DefineConstants>PORTABLE</DefineConstants>
+    <DocumentationFile>bin\iPhone\Release\Google.Apis.iOS.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="..\..\Android\Google.Apis.Android\Apis\Authentication\GoogleAuthenticator.cs">
