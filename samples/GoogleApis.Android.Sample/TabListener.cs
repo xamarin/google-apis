@@ -17,12 +17,13 @@ namespace Google.Apis.Android.Sample
 			this.fragmentName = typeof(T).Namespace.ToLower() + "." + typeof(T).Name;
 		}
 
-		public TabListener (Context listenerContext, string tag)
+		public TabListener (Context listenerContext, string tag, T existingFragment = null)
 			: this (listenerContext)
 		{
 			if (tag == null)
 				throw new ArgumentNullException ("tag");
 
+			this.fragment = existingFragment;
 			this.tag = tag;
 		}
 

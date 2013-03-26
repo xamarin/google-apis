@@ -14,15 +14,23 @@ namespace Google.Apis.Android.Sample
 	public class ListFragment
 		: Fragment
 	{
-		private string listId;
 		private ListView list;
 
 		public override View OnCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
 		{
-			this.list = new ListView (Activity);
-			this.list.LayoutParameters = new ViewGroup.LayoutParams (ViewGroup.LayoutParams.FillParent, ViewGroup.LayoutParams.WrapContent);
+			if (this.list == null) {
+				this.list = new ListView (Activity);
+				this.list.LayoutParameters = new ViewGroup.LayoutParams (
+					ViewGroup.LayoutParams.FillParent, ViewGroup.LayoutParams.WrapContent);
+			}
 
 			return this.list;
+		}
+
+		public override void OnDestroyView()
+		{
+			this.list = null;
+			base.OnDestroyView();
 		}
 
 		public override void OnCreate (Bundle savedInstanceState)
@@ -30,10 +38,13 @@ namespace Google.Apis.Android.Sample
 			SetHasOptionsMenu (true);
 
 			base.OnCreate (savedInstanceState);
+		}
 
-			this.listId = Tag;
-
+		public override void OnStart()
+		{
 			Refresh();
+
+			base.OnStart();
 		}
 
 		public override void OnCreateOptionsMenu (IMenu menu, MenuInflater inflater)
@@ -142,31 +153,33 @@ namespace Google.Apis.Android.Sample
 		private void Refresh()
 		{
 			Activity.SetProgressBarIndeterminateVisibility (true);
-			MainActivity.Service.Tasks.List (this.listId).FetchAsync (response =>
-			{
+			MainActivity.Service.Tasks.List (Tag).FetchAsync (response => {
 				var results = response.GetResult();
 				if (results.Items == null)
 					return;
 
 				Task[] tasks = results.Items.ToArray();
 
-				Activity.RunOnUiThread (() =>
-				{
-					this.list.Adapter = new TasksAdapter (Activity, this.listId, tasks);
+				var activity = Activity;
+				if (activity == null)
+					return;
+
+				activity.RunOnUiThread (() => {
+					if (this.list == null)
+						return;
+
+					this.list.Adapter = new TasksAdapter (Activity, Tag, tasks);
 				});
 			});
 		}
 
 		private void CreateItem (string text)
 		{
-			MainActivity.Service.Tasks.Insert (new Task
-			{
-				Title = text
-			}, this.listId).FetchAsync (response =>
-			{
-				response.GetResult();
-				Activity.RunOnUiThread (Refresh);
-			});
+			MainActivity.Service.Tasks.Insert (new Task { Title = text}, Tag)
+				.FetchAsync (response => {
+					response.GetResult();
+					Activity.RunOnUiThread (Refresh);
+				});
 		}
 	}
 }
