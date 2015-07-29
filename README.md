@@ -1,4 +1,4 @@
-# Google APIs for Xamrin
+# Google APIs for Xamarin
 
 Quickly add access to Google's APIs to your Mono for Android app!
 
